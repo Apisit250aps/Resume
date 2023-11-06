@@ -1,7 +1,26 @@
-#header {
+* {
     font-family: 'Poppins', sans-serif;
 }
 
 .desc {
-    text-indent: 50px;
+    text-indent: 30px;
+}
+
+ul.program {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    list-style-type:square;
+}
+
+
+p {
+    color: rgba(0, 0, 0, .75);
+}
+
+.heading {
+    padding: 0rem 1rem;
+    border-left: 3px gray solid;
+    
+    
 }
