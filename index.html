@@ -28,14 +28,66 @@
 <body class="bg-light">
     <main id="app">
         <section id="header" class="container pt-3 pt-lg-5 py-3">
-            <h1 class="fs-1 fw-semibold">Apisit Saithong</h1>
-            <p class=" fs-4">Full Stack Developer, Designer</p>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class=" navbar-brand">
+                        <h1 class=" fw-semibold">Apisit Saithong</h1>
+                        <p class=" ">Full Stack Developer, Designer</p>
+                    </div>
+                    <button class=" d-block d-lg-none btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <h1 class=" fw-semibold">Apisit Saithong</h1>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Generals
+                                    </a>
+                                    <ul class="dropdown-menu border-0 shadow">
+                                        <li><a class="dropdown-item" href="#about">About</a></li>
+                                        <li><a class="dropdown-item" href="#contact">Contacts</a></li>
+                                        <li><a class="dropdown-item" href="#education">Educations</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Experts
+                                    </a>
+                                    <ul class="dropdown-menu border-0 shadow">
+                                        <li><a class="dropdown-item" href="#work-exp">Work Experian</a></li>
+                                        <li><a class="dropdown-item" href="#data-science">Data Science Skills</a></li>
+                                        <li><a class="dropdown-item" href="#technical">Technical Skills</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <hr class="mb-1">
             <div class="row row-cols-1 row-cols-lg-2 m-auto pt-3 pt-lg-5">
-                <div class="col">
-                    <h3 class="fs-3 mb-3 fw-semibold">About</h3>
+                <div class="col" id="about">
+                    <h3 class=" mb-3 fw-semibold">About</h3>
                     <!-- <hr> -->
-                    <p class="text-black desc mx-1">
+                    <p class=" desc mx-1">
                         Highly motivated and experienced full-stack web developer with a passion for creating innovative
                         and user-friendly web applications. Proven ability to design, develop, and deploy web
                         applications using a variety of front-end and back-end technologies. Expertise in HTML5, CSS3,
@@ -43,8 +95,8 @@
                         demonstrated ability to work independently and as part of a team.
                     </p>
                 </div>
-                <div class="col">
-                    <h3 class=" fs-3 mb-3 fw-semibold text-lg-end text-start">Contacts</h3>
+                <div class="col" id="contact">
+                    <h3 class="  mb-3 fw-semibold text-lg-end text-start">Contacts</h3>
                     <!-- <hr> -->
                     <div class="row row-cols-1 m-auto d-block d-lg-none">
                         <div class="col">
@@ -119,9 +171,9 @@
                 </div>
             </div>
         </section>
-        <section id="educatons" class="container py-3">
+        <section id="education" class="container py-3">
             <div class="row">
-                <h3 class=" fs-3 mb-3 fw-semibold text-center">Educations</h3>
+                <h3 class="  mb-3 fw-semibold text-start text-lg-center">Educations</h3>
                 <hr>
                 <div class="row row-cols-1 row-cols-lg-2 m-auto">
                     <div class="col">
@@ -180,14 +232,14 @@
 
         </section>
         <!-- <hr class="my-1"> -->
-        <section id="general" class=" container py-3">
+        <section id="general" class=" container py-3 ">
             <div class="row row-cols-1 row-cols-md-2  m-auto">
                 <div class="col p-0">
                     <div class="row row-cols-1 m-auto">
-                        <div class="col">
+                        <div class="col" id="work-exp">
                             <h3 class="fw-semibold text-uppercase heading">Work Experiences</h3>
                             <hr>
-                            <p class="fw-semibold fs-4 text-capitalize">Web Developer</p>
+                            <p class="fw-semibold  text-capitalize">Web Developer</p>
                             <ul>
                                 <li>
                                     <p class="">
@@ -208,7 +260,7 @@
                         </div>
                         <div class="col">
                             <!-- <h3 class="fw-semibold text-uppercase">Work Experience</h3> -->
-                            <p class="fw-semibold fs-4 text-capitalize">Back end Developer</p>
+                            <p class="fw-semibold  text-capitalize">Back end Developer</p>
                             <ul>
                                 <li>
                                     <p class="">
@@ -222,7 +274,7 @@
                         </div>
                         <div class="col">
                             <!-- <h3 class="fw-semibold text-uppercase">Work Experience</h3> -->
-                            <p class="fw-semibold fs-4 text-capitalize">API Developer</p>
+                            <p class="fw-semibold  text-capitalize">API Developer</p>
                             <ul>
                                 <li>
                                     <p class="">
@@ -234,7 +286,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col pt-3">
+                        <div class="col pt-3" id="data-science">
                             <h3 class="fw-semibold text-uppercase heading">Data Science Skills</h3>
                             <hr>
                             <p class="">
@@ -274,10 +326,10 @@
                 <!-- Skills -->
                 <div class="col p-0">
                     <div class="row row-cols-1 m-auto">
-                        <div class="col">
+                        <div class="col" id="technical">
                             <h3 class="fw-semibold text-uppercase heading">technical skills</h3>
                             <hr>
-                            <p class="fw-semibold fs-4 text-capitalize">Tools</p>
+                            <p class="fw-semibold  text-capitalize">Tools</p>
                             <p class="">
                                 I am proficient in using a variety of tools related to software development and graphic
                                 design. These tools include:
@@ -325,7 +377,7 @@
                             </ul>
                         </div>
                         <div class="col">
-                            <p class="fw-semibold fs-4 text-capitalize">databases</p>
+                            <p class="fw-semibold  text-capitalize">databases</p>
                             <ul class="program">
                                 <li>
                                     <p>postgreSQL</p>
@@ -339,7 +391,7 @@
                             </ul>
                         </div>
                         <div class="col">
-                            <p class="fw-semibold fs-4 text-capitalize">languages</p>
+                            <p class="fw-semibold  text-capitalize">languages</p>
                             <ul class="program">
                                 <li>
                                     <p>Python</p>
@@ -362,7 +414,7 @@
                             </ul>
                         </div>
                         <div class="col">
-                            <p class="fw-semibold fs-4 text-capitalize">frameworks</p>
+                            <p class="fw-semibold  text-capitalize">frameworks</p>
                             <ul class="program">
                                 <li>
                                     <p>Django</p>
@@ -380,7 +432,7 @@
                                     <p>Flutter</p>
                                 </li>
                                 <li>
-                                    <p>GORM</p>
+                                    <p>Laravel</p>
                                 </li>
                             </ul>
                         </div>

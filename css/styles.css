@@ -10,17 +10,37 @@ ul.program {
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
-    list-style-type:square;
+    list-style-type: none;
+
+}
+
+li {
+    margin: 0rem 0rem;
 }
 
 
-p {
-    color: rgba(0, 0, 0, .75);
-}
 
 .heading {
     padding: 0rem 1rem;
     border-left: 3px gray solid;
-    
-    
+
+
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p,
+b {
+    font-size: 14px;
+}
+
+p {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
 }
